@@ -1,28 +1,34 @@
 # Tarkov Tool
 
-A customized Windows companion for Escape from Tarkov, based on [Tarkov MoA](https://github.com/mopocop/Tarkov-moa).
+A Windows companion for Escape from Tarkov, with map tools, item prices, and ammunition information in one place.
 
 [Download Tarkov Tool](https://github.com/FindAWayFitness/Tarkov-Tool/releases/latest)
 
-Tarkov Tool includes Flea and Ammo Scanners, automatic extract-list recognition with clickable highlights, a map with named pins, zoom favorites that preserve your player’s screen placement, customizable navigation and panels, and a keybind reminder that can import your game controls. Floating utility windows support resizing, collapse, snapping, and linked movement.
+## Features
 
-The desktop app reads local game logs for task changes and raid maps. In-game location screenshots update your position. Optional cleanup deletes newly processed location screenshots after the app acknowledges them. Item data refreshes from Tarkov.dev; armor-effectiveness and reference-distance data refresh from EFT-AMMO, with saved data available during outages.
+- **Flea Scanner:** look up hovered items and compare flea-market and trader prices.
+- **Ammo Scanner:** check armor effectiveness, damage, value, and ammunition graphs.
+- **Map tools:** save zoom favorites, label pins, and update your location with in-game screenshots.
+- **Extract highlights:** recognize your visible extraction list and highlight exits on the map.
+- **Keybind reminder:** import your game controls and keep useful shortcuts within reach.
+- **Customizable layout:** move, resize, collapse, and snap utility windows together.
 
-## Install and transfer your settings
+## Get started
 
-Run the Windows installer and choose your installation folder. To keep the app on E:, use `E:\Apps\TarkovTool`. App data will then live separately at `E:\Apps\TarkovToolData`, including browser storage, scanner calibration, caches, and preferences.
+1. Open the [latest release](https://github.com/FindAWayFitness/Tarkov-Tool/releases/latest).
+2. Download the file ending in **`x64-setup.exe`** and run it.
+3. Launch Tarkov Tool and follow the scanner calibration instructions when using the scanners.
 
-In the browser preview, open **Settings → Settings backup → Export settings**. In the desktop app, use **Import settings** to restore that file. This preserves your layouts, minimum window sizes, zoom favorites, pins, keybinds, and scanner calibration.
+The app checks for updates. Install updates into the same folder to retain your saved preferences.
 
-Task recovery is limited to notifications available in your saved game logs. Extract highlights identify recognized entries in the visible list; conditional exits still have their normal requirements. OCR works with English tooltips and may occasionally need a second scan.
+## Current limitations
 
-Squad sharing requires a separate configured relay server; hosting that server is not part of this installer.
+- Scanner recognition supports English tooltips and may occasionally need another scan.
+- Recovered task progress depends on the game logs available on your PC.
+- Highlighted extracts still have their normal in-game requirements.
+- Online squad sharing is not available in this release.
 
-## Updates
-
-The app uses its own signed update channel under `FindAWayFitness/Tarkov-Tool`. It does not install releases from the original MoA project. Application source is kept private; the public repository contains downloads and documentation only.
-
-Install newer releases into the same folder to keep your saved preferences. The app checks this repository for signed updates.
+Found a problem? [Report an issue](https://github.com/FindAWayFitness/Tarkov-Tool/issues).
 
 ## Credits
 
